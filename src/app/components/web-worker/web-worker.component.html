@@ -1,0 +1,36 @@
+<div
+  class="container m-2"
+  [ngClass]="{
+    'aqau-background': isBackroundAqua,
+    'green-background': !isBackroundAqua
+  }"
+>
+  <h2>Without Web worker</h2>
+  <div class="row m-1 mb-4">
+    <div class="col">
+      <button class="btn btn-primary" (click)="addNumbers()">
+        Add numbers
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn-primary" (click)="changeColor()">
+        Change Colours
+      </button>
+    </div>
+  </div>
+
+
+  <h2>With Web worker</h2>
+  <div class="row m-1">
+    <div class="col">
+      <button class="btn btn-primary" (click)="addNumbersWithWebWorker()">
+        Add numbers with web worker
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn-primary" (click)="changeColor()">
+        Change Colours
+      </button>
+    </div>
+  </div>
+</div>
