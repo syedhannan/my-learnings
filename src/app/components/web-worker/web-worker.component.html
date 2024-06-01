@@ -5,32 +5,48 @@
     'green-background': !isBackroundAqua
   }"
 >
-  <h2>Without Web worker</h2>
-  <div class="row m-1 mb-4">
+  <div class="row m-2">
     <div class="col">
-      <button class="btn btn-primary" (click)="addNumbers()">
-        Add numbers
-      </button>
+      <div class="card">
+        <div class="card-header">Without Web Worker</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <button class="btn btn-primary" (click)="addNumbers()">
+                Add numbers
+              </button>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary" (click)="changeColor()">
+                Change Colours
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <button class="btn btn-primary" (click)="changeColor()">
-        Change Colours
-      </button>
-    </div>
-  </div>
 
-
-  <h2>With Web worker</h2>
-  <div class="row m-1">
     <div class="col">
-      <button class="btn btn-primary" (click)="addNumbersWithWebWorker()">
-        Add numbers with web worker
-      </button>
-    </div>
-    <div class="col">
-      <button class="btn btn-primary" (click)="changeColor()">
-        Change Colours
-      </button>
+      <div class="card">
+        <div class="card-header">With Web Worker</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <button
+                class="btn btn-primary"
+                (click)="addNumbersWithWebWorker()"
+              >
+                Add numbers with web worker
+              </button>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary" (click)="changeColor()">
+                Change Colours
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
